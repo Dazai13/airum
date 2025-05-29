@@ -104,6 +104,9 @@ button{
     align-items: center;
     gap:188px;
 }
+.header__inner-logo{
+    max-width: 35px;
+}
 .header__nav-items{
     display: flex;
     flex-direction: row;
