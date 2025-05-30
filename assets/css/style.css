@@ -132,6 +132,27 @@ button{
     flex-direction: column;
     gap:100px;
 }
+/*background*/
+.background{
+    position: relative;
+    z-index: 0;
+}
+.background-item{
+    position: absolute;
+}
+.background-item:nth-child(1){
+    top:2347px;
+}
+.background-item:nth-child(2){
+    top:3521px;
+}
+.background-item:nth-child(3){
+    top:4408px;
+}
+.background-item:nth-child(4){
+    top:5645px;
+}
+
 /*banner*/
 .banner {
     display: flex;
