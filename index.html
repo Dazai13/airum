@@ -24,23 +24,23 @@
             <ul class="header__nav-items">
               <li class="header__nav-item">
                 <img src="assets/images/catalog.png" alt="">
-                <a class="header__nav-link">Каталог</a>
+                <a data-target="#catalog" class="header__nav-link">Каталог</a>
               </li>
               <li class="header__nav-item">
                 <img src="assets/images/credit.png" alt="">
-                <a class="header__nav-link">Рассрочка</a>
+                <a data-target="#credit" class="header__nav-link">Рассрочка</a>
               </li>
               <li class="header__nav-item">
                 <img src="assets/images/preorder.png" alt="">
-                <a class="header__nav-link">Предзаказ</a>
+                <a data-target="#catalog"  class="header__nav-link">Предзаказ</a>
               </li>
               <li class="header__nav-item">
                 <img src="assets/images/franshiz.png" alt="">
-                <a class="header__nav-link">Франшиза</a>
+                <a data-target="#cooperation" class="header__nav-link">Франшиза</a>
               </li>
               <li class="header__nav-item">
                 <img src="assets/images/contact.png" alt="">
-                <a class="header__nav-link">Связаться</a>
+                <a data-target="#contact" class="header__nav-link">Связаться</a>
               </li>
             </ul>
           </nav>
@@ -50,21 +50,21 @@
     <main class="main">
       <section class="banner">
         <div class="banner__slider">
-          <div class="banner__slider-item">
+          <a data-target="#catalog" class="banner__slider-item">
             <img src="assets/images/banner_1.png" alt="">
-          </div>
-          <div class="banner__slider-item">
+          </a>
+          <a data-target="#contact" class="banner__slider-item">
             <img src="assets/images/banner_2.png" alt="">
-          </div>
-          <div class="banner__slider-item">
+          </a>
+          <a data-target="#credit" class="banner__slider-item">
             <img src="assets/images/banner_3.png" alt="">
-          </div>
-          <div class="banner__slider-item">
+          </a>
+          <a data-target="#catalog" class="banner__slider-item">
             <img src="assets/images/banner_4.png" alt="">
-          </div>
-          <div class="banner__slider-item">
+          </a>
+          <a data-target="#cooperation" class="banner__slider-item">
             <img src="assets/images/banner_5.png" alt="">
-          </div>
+          </a>
         </div>
         <div class="button__container">
           <button class="btn btn-black">Написать в <span>Telegram</span>
@@ -73,7 +73,7 @@
           </button>
         </div>
       </section>
-      <section class="catalog">
+      <section id="catalog" class="catalog">
         <div class="container">
           <div class="catalog__inner">
             <div class="subtitle__container">
@@ -195,7 +195,7 @@
         </div>
         </div>
       </section>
-      <section class="credit">
+      <section id="credit" class="credit">
         <div class="container">
           <div class="credit__inner inner">
             <h1 class="title">Позвольте себе больше</h1>
@@ -237,7 +237,7 @@
           </div>
         </div>
       </section>
-      <section class="cooperation">
+      <section class="cooperation" id="cooperation">
         <div class="container">
           <div class="cooperation__inner">
             <div class="title__inner">
@@ -267,7 +267,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <div class="contact__inner">
             <h1 class="title">Есть вопросы? Напишите <br>нам — ответим быстро </h1>
@@ -297,7 +297,7 @@
             </div>
             <nav class="footer__nav">
                 <div class="footer__nav-item">
-                    <a href="" class="footer__nav-link">
+                    <a data-target="#catalog" class="footer__nav-link">
                         <span class="footer__link-text">Каталог</span>
                         <svg class="accordion__header-icon">
                             <use xlink:href="assets/images/sprite.svg#arrow"></use>
@@ -305,7 +305,7 @@
                     </a>
                 </div>
                 <div class="footer__nav-item">
-                    <a href="" class="footer__nav-link">
+                    <a data-target="#catalog" class="footer__nav-link">
                         <span class="footer__link-text">Предзаказ</span>
                         <svg class="accordion__header-icon">
                             <use xlink:href="assets/images/sprite.svg#arrow"></use>
@@ -313,7 +313,7 @@
                     </a>
                 </div>
                 <div class="footer__nav-item">
-                    <a href="" class="footer__nav-link">
+                    <a data-target="#credit" class="footer__nav-link">
                         <span class="footer__link-text">Рассрочка</span>
                         <svg class="accordion__header-icon">
                             <use xlink:href="assets/images/sprite.svg#arrow"></use>
@@ -321,7 +321,7 @@
                     </a>
                 </div>
                 <div class="footer__nav-item">
-                    <a href="" class="footer__nav-link">
+                    <a data-target="#cooperation" class="footer__nav-link">
                         <span class="footer__link-text">Франшиза</span>
                         <svg class="accordion__header-icon">
                             <use xlink:href="assets/images/sprite.svg#arrow"></use>

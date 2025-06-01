@@ -1,3 +1,34 @@
+/*Scrolling*/
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('[data-target]');
+  
+  // Добавляем обработчик клика для каждой кнопки
+  buttons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetSelector = this.getAttribute('data-target');
+
+      const targetElement = document.querySelector(targetSelector);
+      
+      if (targetElement) {
+        // Плавная прокрутка к элементу
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+
+        targetElement.classList.add('scrolled-to');
+
+        setTimeout(() => {
+          targetElement.classList.remove('scrolled-to');
+        }, 2000);
+      } else {
+        console.warn(`Элемент не найден: ${targetSelector}`);
+      }
+    });
+  });
+});
 /*Slider*/
 $(document).ready(function(){
   $('.banner__slider').slick({

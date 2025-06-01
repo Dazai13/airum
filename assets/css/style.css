@@ -428,7 +428,8 @@ margin-top: 33px;
 /*cooperation*/
 .cooperation {
   background: url("../images/cooperation__background.png");
-  padding: 100px 0;
+  margin: 100px 0 0;
+  padding:0 0 100px;
 }
 .cooperation__inner {
   display: flex;
@@ -567,7 +568,6 @@ margin-top: 33px;
     margin-top:36px;
 }
 .footer__nav-item{
-    padding:23px 0;
     border-width: 1px 0;
     border-top:0;
     border-style: solid;
@@ -583,6 +583,7 @@ margin-top: 33px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 75px;
 }
 .footer__nav-link span{
     color:var(--white);
