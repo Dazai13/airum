@@ -142,6 +142,9 @@ button{
     flex-direction: row;
     gap:8px;
 }
+.header__nav-item img{
+    width:20px;
+}
 .header__nav-link{
     color:var(--black);
     font-size: 18px;
