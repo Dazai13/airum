@@ -375,7 +375,59 @@ translate: -50%;
 .process{
     background: url("../images/Фоныс\ 1.png");
     height: 787px;
-    padding-top:58px;
+    padding-top:100px;
+}
+.process__graphic{
+    position: relative;
+}
+.process__graphic-item{
+    position: absolute;
+}
+.graphic-security{
+    width: 201px;
+    left:-81px;
+}
+.graphic-block{
+    width: 527px;
+    height: 339px;
+    border-radius: 80px 80px 0  80px;
+    background: var(--white);
+    top:132px;
+    left:397px;
+}
+.graphic-contract{
+    width:616px;
+    left:343px;
+}
+.graphic-security-ver1{
+    width:156px;
+    top:175px;
+    left:443px;
+}
+.btn-graphic{
+    width:212px;
+    height: 212px;
+    background: linear-gradient(135.09deg, #000000 -12.51%, #1C1C1C 236.06%);
+    box-shadow: 0px 20px 32.8px 6px #FFFFFF40 inset;
+    left:626px;
+    top:316px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-graphic:hover{
+    background: var(--osn-green);
+
+}
+.btn__graphic-image{
+    background: url('../images/Стрелочка.png');
+    width:117px;
+    height: 117px;
+}
+.btn-graphic:hover .btn__graphic-image{
+    background: url('../images/Mask\ group.png');
+    transition: all 1s ease;
 }
 /*cooperation*/
 .cooperation{
