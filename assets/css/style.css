@@ -112,13 +112,13 @@ margin-top: 33px;
   gap: 9px;
   margin-bottom: 13px;
 }
-.subtitle__container img{
-    width: 40px;
-}
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+.icon{
+    width:40px;
 }
 @media (min-width: 720) and (max-width: 1199px) {
   .container {
@@ -528,3 +528,103 @@ margin-top: 33px;
   height: 100px;
 }
 /*footer*/
+.footer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer__header{
+    background: #1D1D1D80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__title{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-top:26px;    
+}
+.footer__title-text{
+    font-size: 36px;
+    line-height: 44px;
+    color:var(--white);
+    font-weight: 700;
+}
+.footer__title-text span{
+    color:var(--osn-green);
+    font-weight: 500;
+}
+.footer__nav{
+    border-width: 1px 0;
+    border-style: solid;
+    border-image: var(--lines);
+    border-image-slice: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:36px;
+}
+.footer__nav-item{
+    padding:23px 0;
+    border-width: 1px 0;
+    border-top:0;
+    border-style: solid;
+    border-image: var(--l2);
+    border-image-slice: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer__nav-link{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__nav-link span{
+    color:var(--white);
+}
+.footer__link-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+.footer__nav-link svg{
+    rotate: 270deg;
+}
+.footer__adress{
+    padding:32px;
+    display: flex;
+    gap: 24px;
+    width:1080px;
+    flex-wrap: wrap;
+}
+.footer__adress-item{
+    color:var(--osn-green);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    padding:15px 20px;
+    border-radius: 68px;
+    background: #232323;
+    width: max-content;
+}
+.footer__adress-item span{
+    color:var(--white);
+}
+.footer__under{
+    padding:36px 0; 
+    display: flex;
+    justify-content: center;
+}
+.footer__under-link{
+    text-decoration: underline;
+    color:var(--osn-green);
+    font-size:16px;
+    font-weight: 500;
+    text-decoration-skip-ink: auto; 
+    line-height: 20px;
+}
