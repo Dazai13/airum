@@ -1,0 +1,8 @@
+<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg" display="none">
+<symbol id="arrow">
+    <path d="M17.75 2L9.875 9L2 2" stroke="#2BE427" stroke-width="4"/>
+</symbol>
+<symbol id="line">
+    <rect x="1.375" y="1" width="17" height="3" fill="#2BE427" stroke="#2BE427"/>
+</symbol>
+</svg>
