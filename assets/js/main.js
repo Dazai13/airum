@@ -29,6 +29,54 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+/*Lazy load*/
+document.addEventListener('DOMContentLoaded', function() {
+  // Проверяем поддержку Intersection Observer
+  if ('IntersectionObserver' in window) {
+    // Настройки: загружать изображения за 200px до их появления в viewport
+    const observerOptions = {
+      rootMargin: '200px',
+      threshold: 0.1
+    };
+
+    const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          
+          // Поддержка srcset
+          if (img.dataset.srcset) {
+            img.srcset = img.dataset.srcset;
+          }
+          
+          // Основной src
+          img.src = img.dataset.src;
+          
+          // Удаляем класс lazy (опционально)
+          img.classList.remove('lazy');
+          
+          // Отключаем наблюдение
+          observer.unobserve(img);
+        }
+      });
+    }, observerOptions);
+
+    // Находим все lazy-изображения и добавляем их в Observer
+    const lazyImages = document.querySelectorAll('img.lazy');
+    lazyImages.forEach(img => lazyImageObserver.observe(img));
+
+  } else {
+    // Fallback для старых браузеров (загрузка всех изображений сразу)
+    console.warn('Intersection Observer не поддерживается. Используем fallback.');
+    const lazyImages = document.querySelectorAll('img.lazy');
+    
+    lazyImages.forEach(img => {
+      if (img.dataset.srcset) img.srcset = img.dataset.srcset;
+      img.src = img.dataset.src;
+      img.classList.remove('lazy');
+    });
+  }
+});
 /*Slider*/
 $(document).ready(function(){
   $('.banner__slider').slick({
