@@ -161,26 +161,6 @@ button{
     display: flex;
     flex-direction: column;
 }
-/*background*/
-.background{
-    position: relative;
-    z-index: -1;
-}
-.background-item{
-    position: absolute;
-}
-.background-item:nth-child(1){
-    top:2347px;
-}
-.background-item:nth-child(2){
-    top:3521px;
-}
-.background-item:nth-child(3){
-    top:4408px;
-}
-.background-item:nth-child(4){
-    top:5645px;
-}
 /*banner*/
 .banner {
     display: flex;
@@ -396,4 +376,14 @@ translate: -50%;
     background: url("../images/Фоныс\ 1.png");
     height: 787px;
     padding-top:58px;
+}
+/*cooperation*/
+.cooperation{
+    background: url('../images/ЛЮДм\ 1.png');
+    height: 1337px;
+}
+/*contact*/
+.contact{
+    background:url("../images/Яы\ 1.png");
+    height: 1218px;
 }
