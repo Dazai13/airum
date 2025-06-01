@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Montserrat";
     src: url('../fonts/Montserrat.ttf');
+    font-display: swap;
 }
 :root {
   --green: linear-gradient(90deg, #37c84f 0%, #4ce765 100%);
