@@ -9,6 +9,7 @@
     --l2: linear-gradient(90deg, #0F0F0F 0%, #616161 50%, #0F0F0F 100%);
     --download: linear-gradient(90deg, #39A737 0%, #2BE427 64%);
     --menu-line: linear-gradient(90deg, #FFFFFF 0%, #616161 50%, #FFFFFF 100%);
+    --title-bg: linear-gradient(109.36deg, #212121 -16.46%, #808080 261.92%);
     --black: #000;
     --btn-text:#0B0B0B;
     --white: #fff;
@@ -432,7 +433,66 @@ translate: -50%;
 /*cooperation*/
 .cooperation{
     background: url('../images/ЛЮДм\ 1.png');
-    height: 1337px;
+    padding:100px 0;
+}
+.cooperation__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.title__inner{
+    background: linear-gradient(109.36deg, #212121 -16.46%, #808080 261.92%); 
+    padding:20px 50px;
+    border-radius: 76px;
+}
+.cooperation__inner .subtitle{
+    width:351px;
+    margin-top:36px;
+    text-align: center;
+    font-size:24px;
+    line-height: 28px;
+    color:var(--white);
+}
+.cooperation__inner .subtitle span{
+    color:var(--osn-green)
+}
+.cooperation__block{
+   background: var(--white) url('../images/image\ 3.png');
+   width:1011px;
+   height: 350px;
+    border-radius: 75px;
+    margin-top: 36px;
+    position: relative;
+}
+.cooperation__block-image{
+    position: absolute;
+}
+.cooperation__block-image   {
+    width:846px;
+    left:100px;
+    bottom: 0;
+}
+.cooperation__inner > :nth-child(3) .cooperation__block-image{
+    width:549px;
+    top:0;
+    left:inherit;
+    right:0;
+}
+.cooperation__block-item{
+    background: var(--osn-green);
+    box-shadow: 0px 0px 35.5px 0px #FFFFFFC2;
+    margin-top: 34px;
+    margin-left: 37px;
+    padding:30px 47px;
+    width: max-content;
+    border-radius: 78px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+.cooperation__block-item span{
+    font-weight: 600;
 }
 /*contact*/
 .contact{
