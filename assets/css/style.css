@@ -28,6 +28,7 @@ a{
     text-decoration: none;
     cursor: pointer;
     transition: var(--animation);
+    font-family: "Montserrat", sans-serif;
 }
 img{
     width: 100%;
@@ -49,6 +50,7 @@ button{
     transition: all 1s ease;
     font-size:16px;
     font-weight: 600;
+    font-family: "Montserrat", sans-serif;
 }
 .title{
     font-size: 48px;
