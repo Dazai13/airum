@@ -11,7 +11,7 @@
     <title>Айрум.рф</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__inner">
         <div class="header__inner-logo">
           <img class="lazy" data-src="assets/images/logo__ver1.png" alt="">
@@ -24,7 +24,7 @@
                 <a data-target="#catalog" class="header__nav-link">Каталог</a>
               </li>
               <li class="header__nav-item">
-                <img class="lazy" data-src="assets/images/credit.png" alt="">
+                <img class="lazy" data-src="assets/images/credit__icon.png" alt="">
                 <a data-target="#credit" class="header__nav-link">Рассрочка</a>
               </li>
               <li class="header__nav-item">
@@ -43,24 +43,111 @@
           </nav>
         </div>
       </div>
+      <div class="header__inner-mob">
+        <div class="header__inner-burger">
+            <svg id="menuToggle">
+                <use xlink:href="assets/images/sprite.svg#burger"></use>
+            </svg>
+        </div>
+        <div class="header__inner-logo">
+          <img class="lazy" data-src="assets/images/logo__ver2.png" alt="">
+        </div>
+        <div class="header__inner-nav">
+          <nav class="header__nav">
+            <ul class="header__nav-items">
+              <li class="header__nav-item">
+                <img class="lazy" data-src="assets/images/catalog.png" alt="">
+                <a data-target="#catalog" class="header__nav-link">Каталог</a>
+              </li>
+              <li class="header__nav-item">
+                <img class="lazy" data-src="assets/images/preorder.png" alt="">
+                <a data-target="#catalog"  class="header__nav-link">Предзаказ</a>
+              </li>
+                <li class="header__nav-item">
+                <img class="lazy" data-src="assets/images/credit__icon.png" alt="">
+                <a data-target="#credit" class="header__nav-link">Рассрочка</a>
+              </li>
+              <li class="header__nav-item">
+                <img class="lazy" data-src="assets/images/contact.png" alt="">
+                <a data-target="#contact" class="header__nav-link">Связаться</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu">
+
+            <div class="mobile__menu-header">
+                <div class="container">
+                    <div class="menu__header-close" id="menuClose"><img src="assets/images/close.png" alt=""></div>
+                    <div class="menu__header-logo"><img src="assets/images/logo__ver2.png" alt=""></div>
+                </div>
+            </div>
+            <div class="mobile__menu-body">
+                <nav class="footer__nav">
+                <div class="footer__nav-item">
+                    <a data-target="#catalog" class="footer__nav-link">
+                        <span class="footer__link-text">Каталог</span>
+                        <svg class="menu__header-icon">
+                            <use xlink:href="assets/images/sprite.svg#arrow__black"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__nav-item">
+                    <a data-target="#catalog" class="footer__nav-link">
+                        <span class="footer__link-text">Предзаказ</span>
+                        <svg class="menu__header-icon">
+                            <use xlink:href="assets/images/sprite.svg#arrow__black"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__nav-item">
+                    <a data-target="#credit" class="footer__nav-link">
+                        <span class="footer__link-text">Рассрочка</span>
+                        <svg class="menu__header-icon">
+                            <use xlink:href="assets/images/sprite.svg#arrow__black"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__nav-item">
+                    <a data-target="#cooperation" class="footer__nav-link">
+                        <span class="footer__link-text">Франшиза Айрум</span>
+                        <svg class="menu__header-icon">
+                            <use xlink:href="assets/images/sprite.svg#arrow__black"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__nav-item">
+                    <a data-target="#contact" class="footer__nav-link">
+                        <span class="footer__link-text">Связаться</span>
+                        <svg class="menu__header-icon">
+                            <use xlink:href="assets/images/sprite.svg#arrow__black"></use>
+                        </svg>
+                    </a>
+                </div>
+                </nav>
+                <div class="mobile__menu-policy">Все права защищены. © 2025 </div>
+            </div>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+      </div>
     </header>
     <main class="main">
       <section class="banner">
         <div class="banner__slider">
           <a data-target="#catalog" class="banner__slider-item">
-            <img class="lazy" data-src="assets/images/banner_1.png" alt="">
+            <img src="assets/images/banner_1.png" alt="">
           </a>
           <a data-target="#contact" class="banner__slider-item">
-            <img class="lazy" data-src="assets/images/banner_2.png" alt="">
+            <img src="assets/images/banner_2.png" alt="">
           </a>
           <a data-target="#credit" class="banner__slider-item">
-            <img class="lazy" data-src="assets/images/banner_3.png" alt="">
+            <img src="assets/images/banner_3.png" alt="">
           </a>
           <a data-target="#catalog" class="banner__slider-item">
-            <img class="lazy" data-src="assets/images/banner_4.png" alt="">
+            <img src="assets/images/banner_4.png" alt="">
           </a>
           <a data-target="#cooperation" class="banner__slider-item">
-            <img class="lazy" data-src="assets/images/banner_5.png" alt="">
+            <img src="assets/images/banner_5.png" alt="">
           </a>
         </div>
         <div class="button__container">
@@ -112,16 +199,24 @@
               <div class="catalog__item">
                 <h1 class="title">Все товары в одном файле</h1>
                 <div class="catalog__item-image">
-                  <img class="lazy" data-src="assets/images/catalog__image-6.png" alt="">
+                  <img id="responsive-image" class="lazy" data-src="assets/images/catalog__image-6.png" alt="">
                 </div>
                 <button class="catalog__item-btn btn-white">Скачать</button>
               </div>
               <div class="catalog__item">
-                <div class="subtitle__container">
-                  <img class="icon lazy" data-src="assets/images/wallet.png" alt="">
-                  <h2 class="subtitle">Выбор <span>клиентов</span> Айрум </h2>
-                </div>
-                <button class="catalog__item-btn btn-gray">Узнать больше</button>
+                      <div class="subtitle__container">
+                        <img class="icon lazy" data-src="assets/images/wallet.png" alt="">
+                        <h2 class="subtitle">Выбор <span>клиентов</span> Айрум</h2>
+                    </div>
+                    <button class="catalog__item-btn btn-gray">Узнать больше</button>
+              </div>
+                <div class="catalog__item">
+                      <div class="subtitle__container">
+                        <h2 class="subtitle">Получите <span>максимум</span> выгоды</h2>
+                        <img class="icon lazy" data-src="assets/images/wallet.png" alt="">
+                    </div>
+                    <p class="catalog__item-text">С <span>предзаказом</span> Айрум</p>
+                    <button class="catalog__item-btn btn-gray">Узнать <span>больше</span></button>
               </div>
             </div>
           </div>
