@@ -327,22 +327,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  function initEventListeners() {
-
-    const newMenuToggle = document.getElementById('menuToggle');
-    if (newMenuToggle) {
-      newMenuToggle.addEventListener('click', () => toggleMenu(true));
-    }
-
-    document.querySelectorAll('[data-target]').forEach(link => {
-      link.addEventListener('click', handleSmoothScroll);
-    });
+function initEventListeners() {
+  const newMenuToggle = document.getElementById('menuToggle');
+  if (newMenuToggle) {
+    newMenuToggle.addEventListener('click', () => toggleMenu(true));
   }
+
+  const newMenuClose = document.getElementById('menuClose');
+  if (newMenuClose) {
+    newMenuClose.addEventListener('click', () => toggleMenu(false));
+  }
+
+  document.querySelectorAll('[data-target]').forEach(link => {
+    link.addEventListener('click', handleSmoothScroll);
+  });
+}
 
   let isScrolling;
   window.addEventListener('scroll', function() {
     const currentScroll = window.scrollY;
-    const scrollThreshold = 100;
+    const scrollThreshold = 1;
     
     clearTimeout(isScrolling);
     isScrolling = setTimeout(() => {
@@ -355,7 +359,7 @@ document.addEventListener('DOMContentLoaded', function() {
         header.classList.remove('fixed-header');
         updateHeaderContent(false);
       }
-    }, 100);
+    }, 1);
   }, false);
 
   if (overlay) overlay.addEventListener('click', () => toggleMenu(false));
